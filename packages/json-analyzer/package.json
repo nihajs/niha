@@ -1,10 +1,16 @@
 {
-  "name": "@nihajs/json-analyzer",
-  "version": "0.0.1",
+  "name": "@niha-js/json-analyzer",
+  "version": "0.0.4",
   "dependencies": {
-    "@swc/helpers": "~0.5.2"
+    "@swc/helpers": "~0.5.2",
+    "benchmark": "2.1.4",
+    "chalk": "^4.1.2",
+    "fast-json-stable-stringify": "2.1.0",
+    "fast-json-stringify": "5.10.0",
+    "to-json-schema": "0.2.5"
   },
   "type": "module",
   "main": "./src/index.js",
-  "typings": "./src/index.d.ts"
+  "typings": "./src/index.d.ts",
+  "bin": "./src/index.js"
 }

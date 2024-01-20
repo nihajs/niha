@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nihajs/json-analyzer": ["packages/json-analyzer/src/index.ts"]
+      "@niha-js/json-analyzer": ["packages/json-analyzer/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
