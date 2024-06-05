@@ -1,7 +1,4 @@
 # markdown-to-html-analyser
 
-This library was generated with [Nx](https://nx.dev).
-
-## Building
-
-Run `nx build markdown-to-html-analyser` to build the library.
+A simple library to analyse markdown files.
+And determine which library to use.
