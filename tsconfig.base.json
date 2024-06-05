@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@niha-js/json-analyzer": ["packages/json-analyzer/src/index.ts"]
+      "@niha-js/json-analyzer": ["packages/json-analyzer/src/index.ts"],
+      "@niha-js/markdown-to-html-analyser": [
+        "packages/markdown-to-html-analyser/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

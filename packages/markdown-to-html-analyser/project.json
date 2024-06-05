@@ -1,0 +1,27 @@
+{
+  "name": "markdown-to-html-analyser",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/markdown-to-html-analyser/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/markdown-to-html-analyser",
+        "main": "packages/markdown-to-html-analyser/src/index.ts",
+        "tsConfig": "packages/markdown-to-html-analyser/tsconfig.lib.json",
+        "assets": ["packages/markdown-to-html-analyser/*.md"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs markdown-to-html-analyser {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": []
+}
